@@ -1,46 +1,87 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Letmeask
 
-## Available Scripts
+Letmeask é uma aplicação de Q&A (perguntas e respostas) voltada para a interação em tempo real entre usuários e administradores. A plataforma permite que os usuários façam perguntas e os administradores respondam, oferecendo uma experiência dinâmica e interativa.
 
-In the project directory, you can run:
 
-### `yarn start`
+## Funcionalidades
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- Criação de salas para perguntas e respostas
+- Envio e gerenciamento de perguntas em tempo real
+- Destacar perguntas mais votadas
+- Interface amigável e responsiva
+- Autenticação de usuários via Google
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
-### `yarn test`
+## Stack utilizada
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+**Front-end:** 
+- React
+- TypeScript
+- SASS
 
-### `yarn build`
+**Back-end:** 
+- Firebase Realtime Database
+- Firebase Authentication
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Instalação
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+**Pré-requisitos**
+- Node.js (versão 12 ou superior)
+- Yarn ou npm
 
-### `yarn eject`
+**Passos para Instalação**
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+1. Clone o repositório:
+```bash
+  git clone https://github.com/o-FM/letmeask.git
+  cd letmeask
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+2. Instale as dependências:
+```bash
+  yarn install
+```
+ou
+```bash
+  npm install
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+3. Configure as variáveis de ambiente:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Crie um arquivo .env.local na raiz do projeto e adicione as seguintes variáveis:
 
-## Learn More
+```bash
+REACT_APP_FIREBASE_API_KEY=your_api_key
+REACT_APP_FIREBASE_AUTH_DOMAIN=your_auth_domain
+REACT_APP_FIREBASE_DATABASE_URL=your_database_url
+REACT_APP_FIREBASE_PROJECT_ID=your_project_id
+REACT_APP_FIREBASE_STORAGE_BUCKET=your_storage_bucket
+REACT_APP_FIREBASE_MESSAGING_SENDER_ID=your_messaging_sender_id
+REACT_APP_FIREBASE_APP_ID=your_app_id
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+4. Inicie a aplicação:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+  yarn start
+```
+ou
+```bash
+  npm start
+```
+A aplicação estará disponível em http://localhost:3000.
+## Contribuindo
+
+- Faça um fork do projeto
+- Crie uma branch para sua feature (git checkout -b feature/nome-da-feature)
+- Commit suas mudanças (git commit -m 'Adiciona nova feature')
+- Faça o push para a branch (git push origin feature/nome-da-feature)
+- Abra um Pull Request
+
+
+## Licença
+
+[MIT](https://choosealicense.com/licenses/mit/)
+
